@@ -1,0 +1,29 @@
+
+@api = http://localhost:4000
+
+###
+GET {{api}}/videos
+
+###
+GET {{api}}/videos/6104439c6918512598b09e3b
+
+
+###  create video
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "url": "https://www.youtube.com/watch?v=U6st9-lNUyY",
+    "title": "Variables de entorno NodeJS",
+    "description": "Este un video de variables de entorno de NodeJS "
+}
+###
+DELETE  {{api}}/videos/6104424e8f833a50fc30c777
+
+###
+PUT {{api}}/videos/6104439c6918512598b09e3b
+Content-Type: application/json
+
+{
+     "description": "aprender a configurar variables de entorno"
+}
